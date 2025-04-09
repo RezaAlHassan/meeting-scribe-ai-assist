@@ -11,7 +11,7 @@ import {
   ListTodo, 
   Menu, 
   MessageSquare, 
-  MicSquare, 
+  Mic, // Changed from MicSquare to Mic
   Plus, 
   Settings, 
   X 
@@ -25,7 +25,7 @@ type NavigationItem = {
 
 const navigation: NavigationItem[] = [
   { name: "Dashboard", href: "/", icon: Home },
-  { name: "Recordings", href: "/recordings", icon: MicSquare },
+  { name: "Recordings", href: "/recordings", icon: Mic }, // Changed from MicSquare to Mic
   { name: "Transcripts", href: "/transcripts", icon: FileText },
   { name: "Tasks", href: "/tasks", icon: ListTodo },
   { name: "Conversations", href: "/chats", icon: MessageSquare },

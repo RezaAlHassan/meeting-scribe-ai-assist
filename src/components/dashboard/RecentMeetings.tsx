@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Grid, List, Search } from "lucide-react";
+import { Clock, Users, Badge } from "@/components/icons/CustomIcons";
 import MeetingCard, { Meeting } from "./MeetingCard";
 
 // Sample data

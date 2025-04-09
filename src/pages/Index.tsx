@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import MainLayout from "@/components/layout/MainLayout";
+import StatsCards from "@/components/dashboard/StatsCards";
+import RecentMeetings from "@/components/dashboard/RecentMeetings";
+import RecordMeetingCard from "@/components/dashboard/RecordMeetingCard";
+import UpcomingMeetings from "@/components/dashboard/UpcomingMeetings";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <MainLayout>
+      <div className="py-6">
+        <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+          <div className="lg:col-span-2">
+            <StatsCards />
+          </div>
+          <div className="lg:col-span-1">
+            <RecordMeetingCard />
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+          <div className="lg:col-span-2">
+            <RecentMeetings />
+          </div>
+          <div className="lg:col-span-1">
+            <UpcomingMeetings />
+          </div>
+        </div>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 
